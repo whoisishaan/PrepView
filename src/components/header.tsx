@@ -1,8 +1,9 @@
 'use client'
 import Link from 'next/link'
-import { Logo } from '@/components/logo'
+
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 import React from 'react'
 
 const menuItems = [
@@ -27,10 +28,11 @@ export const HeroHeader = () => {
                                 aria-label="home"
                                 className="flex items-center space-x-3">
                                 <div className="relative h-8 w-8">
-                                    <img
+                                    <Image
                                         src="/logo.png"
                                         alt="PrepView Logo"
-                                        className="h-full w-full object-contain"
+                                        fill
+                                        className="object-contain"
                                     />
                                 </div>
                                 <span className="text-xl font-bold bg-gradient-to-r from-[#9B99FE] to-[#2BC8B7] bg-clip-text text-transparent">
