@@ -8,7 +8,7 @@ export function TeamSection() {
             name: 'Ishaan Sharma',
             role: 'Founder & CEO - PrepView',
             bio: 'Final Year B. Tech Student at VIT',
-            image: '/ishaanpic.jpg',
+            image: '/ishaanpic.JPG',
             linkedin: 'https://www.linkedin.com/in/ishaan-sharma-a43547202/', // Replace with actual LinkedIn URL
             github: 'https://github.com/whoisishaan' // Replace with actual GitHub URL
         },
