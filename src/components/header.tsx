@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React from 'react'
+import { ModeToggle } from './mode-toggle'
 
 const menuItems = [
     { name: 'Features', href: '#features' },
@@ -77,15 +78,18 @@ export const HeroHeader = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <Button
-                                asChild
-                                size="sm"
-                                variant="outline"
-                                className="w-full bg-white text-foreground hover:bg-white/90 transition-colors">
-                                <Link href="https://prepvieww.vercel.app/sign-in">
-                                    <span>Get started for free</span>
-                                </Link>
-                            </Button>
+                            <div className="flex items-center gap-4">
+                                <ModeToggle />
+                                <Button
+                                    asChild
+                                    size="sm"
+                                    variant="outline"
+                                    className="w-full bg-white text-foreground hover:bg-white/90 transition-colors">
+                                    <Link href="https://prepvieww.vercel.app/sign-in">
+                                        <span>Get started for free</span>
+                                    </Link>
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>
